@@ -1,5 +1,6 @@
 <template>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-8">
+        <div class="newsFlexContainer">
         <div v-for="(news,index) of articles" :key="news.source.name" class="bg-white shadow rounded-xl">
             <img :src="news.urlToImage" alt="title" class="rounded-t-xl w-full h-48 object-cover">
             <div class="p-3"> 
@@ -14,6 +15,7 @@
                     </router-link>    
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </template>
